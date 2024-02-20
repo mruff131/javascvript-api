@@ -1,0 +1,205 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to bottom right, #ffa600, #e80000);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+header {
+    background-color: #ffffff00;
+    color: black;
+}
+
+
+.navbar img, svg {
+    height: 150px;
+}
+
+
+
+
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5%;
+    padding-top: 0;
+    max-height: 200px;
+    position: fixed; /* Fix the navbar in place */
+    top: 0; /* Position it at the top of the viewport */
+    width: 100%; 
+    z-index: 1000; 
+    background-color: #0000004f;
+    padding: 150px;
+}
+
+
+
+.navbar-brand {
+    text-align: center;
+    font-family: 'Galada', sans-serif;
+    font-size: 96px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    background: var(--Linear, linear-gradient(90deg, #FF7AF2 31.92%, #95FEC8 66.69%));    
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+}
+
+
+
+.navbar-links {
+    display: flex;
+}
+
+.navbar-links a {
+    color: black;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+
+.navbar-icons {
+    display: flex; /* Ensure icons are displayed side by side */
+    align-items: center;
+    padding-bottom: 70px;
+}
+
+.navbar-icons img {
+    vertical-align: middle;
+    margin-left: 10px;
+}
+
+
+
+
+.navigation {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .nav-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+    min-width: 200px; /* Adjust the width as needed */
+    height: 500px;
+    font-size: 3em;
+    border-radius: 10px;
+
+    
+
+  }
+  
+  .navigation:hover .nav-content {
+    display: block;
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.gallery-slider {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    transform-style: preserve-3d;
+    animation: rotate 30s linear infinite;
+}
+
+
+
+
+
+
+
+
+@keyframes rotate {
+    0% {
+        transform: perspective(1000px) rotateY(0deg);
+    }
+
+    100% {
+        transform: perspective(1000px) rotateY(360deg);
+    }
+}
+
+.gallery-slider span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-origin: center;
+    transform-style: preserve-3d;
+    transform: rotateY(calc(var(--i) * 45deg)) translateZ(1000px);
+
+}
+
+.gallery-slider span img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300%;
+    height: 400%;
+    border-radius: 100px;
+    object-fit: cover;
+    transition: 2s;
+    box-shadow: 0 0 200px rgba(0, 0, 0, 0.5);
+}
+
+.gallery-slider span:hover img{
+    transform: translateY(-50px) scale(1.2);
+}
+
+.image-text {
+    position: absolute;
+    top: -200px; /* Adjust as needed */
+    left: 200px; /* Adjust as needed */
+    color: white; /* Adjust text color as needed */
+    font-size: 5em; /* Adjust font size as needed */
+    font-weight: bold; /* Adjust font weight as needed */
+    z-index: 1; /* Ensure text appears above the image */
+    transform: rotateY(180deg); /* Rotate text to correct orientation */
+}
+
+h1 {
+    font-size: 100px;
+    padding-bottom: 1500px;
+    z-index: -1000;
+    color: white;
+    padding-left: 250px;
+}
+
+h2 {
+    font-size: 80px;
+    color: white;
+
+}

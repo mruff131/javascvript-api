@@ -1,0 +1,191 @@
+body {
+    color: black;
+    background-image: url(images/Background\ Squares\ \(1\).png);
+    background-repeat: no repeat;
+    background-size: cover;
+    background-color: black;
+    font-size: 3em;
+}
+
+html, body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    /* height: 100vh; */
+    overflow-x: hidden;
+    
+}
+
+
+header {
+    background-color: #ffffff00;
+    color: black;
+}
+
+
+.navbar img, svg {
+    height: 150px;
+}
+
+
+
+
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5%;
+    padding-top: 0;
+    max-height: 200px;
+    position: fixed; /* Fix the navbar in place */
+    top: 0; /* Position it at the top of the viewport */
+    width: 100%; 
+    z-index: 1000; 
+    margin-top: 75px;
+}
+
+
+
+.navbar-brand {
+    text-align: center;
+    font-family: 'Galada', sans-serif;
+    font-size: 96px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    background: var(--Linear, linear-gradient(90deg, #FF7AF2 31.92%, #95FEC8 66.69%));    
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+}
+
+
+
+.navbar-links {
+    display: flex;
+}
+
+.navbar-links a {
+    color: black;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+
+.navbar-icons {
+    display: flex; /* Ensure icons are displayed side by side */
+    align-items: center;
+    padding-bottom: 70px;
+}
+
+.navbar-icons img {
+    vertical-align: middle;
+    margin-left: 10px;
+}
+
+
+
+
+.navigation {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .nav-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+    min-width: 200px; /* Adjust the width as needed */
+    height: 500px;
+    font-size: 3em;
+    border-radius: 10px;
+
+    
+
+  }
+  
+  .navigation:hover .nav-content {
+    display: block;
+  }
+  
+
+
+
+
+
+.searchbar {
+    padding-bottom: 50px;
+}
+
+
+/*  */
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100vh;
+    flex-wrap: wrap;
+}
+
+.gallery {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+   
+
+}
+
+
+
+.gallery img {
+    /* max-width: 100%; Ensure image doesn't exceed container width */
+    height:1800px; /* Allow image to adjust height while maintaining aspect ratio */
+    object-fit: cover; /* Scale image to cover container */
+    width: 1500px;
+    border-radius: 100px;
+    box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.75);
+
+
+}
+
+
+
+
+.gallery-item {
+    width: 50%;
+    border: 5px solid red; 
+    
+}
+
+.gallery figure {
+    margin: 0; 
+  
+}
+
+
+button {
+    width: 1000px;
+    border-radius: 45px;
+    padding: 10px 20px;
+    font-size: 50px;
+
+}
+
+.button {
+    width: 800px;
+    border-radius: 45px;
+    font-size: 2em;
+    padding-left: 225px ;
+    padding-top: 100px;
+}
+
+p {
+    color: white;
+}
